@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPreExecute() {
-            super.onPreExecute();
             status = findViewById(R.id.countdown);
+            super.onPreExecute();
             status.setText("Start");
         }
 
@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute (Integer result) {
+            status = findViewById(R.id.countdown);
+            status.setText("Done");
             super.onPostExecute(result);
         }
     }
