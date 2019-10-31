@@ -18,10 +18,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onStartClick(View v) {
-        new MyAsynTask().execute();
+        new MyAsyncTask().execute();
     }
 
-    public class MyAsynTask extends AsyncTask<Integer, Integer, Integer> {
+    public class MyAsyncTask extends AsyncTask<Integer, Integer, Integer> {
 
         @Override
         protected void onPreExecute() {
